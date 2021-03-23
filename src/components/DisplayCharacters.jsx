@@ -17,48 +17,16 @@ class DisplayCharacters extends React.Component {
 
         return (
             <div 
-                className={this.props.visible ? 'display' : 'display none-display'}>
+                className='display'>
 
                 {
                     filtersKeys.length > 0 ?
                     this.props.data
                         .filter(el => el.name.toLowerCase().includes(this.props.name.toLowerCase()))
-                        .filter(el => {
-                            if (filters.age) {
-                                if (el.age === filters.age) {
-                                    return true
-                                } else {
-                                    return false
-                                }
-                            }
-                        })
-                        .filter(el => {
-                            if (filters.gender) {
-                                if (el.gender === filters.gender) {
-                                    return true
-                                } else {
-                                    return false
-                                }
-                            }
-                        })
-                        .filter(el => {
-                            if (filters.race) {
-                                if (el.race === filters.race) {
-                                    return true
-                                } else {
-                                    return false
-                                }
-                            }
-                        })
-                        .filter(el => {
-                            if (filters.status) {
-                                if (el.status === filters.status) {
-                                    return true
-                                } else {
-                                    return false
-                                }
-                            }
-                        })
+                        .filter(el => !filters.age ? true : (el.age === filters.age) ? true : false)
+                        .filter(el => !filters.gender ? true : (el.gender === filters.gender) ? true : false)
+                        .filter(el => !filters.race ? true : (el.race === filters.race) ? true : false)
+                        .filter(el => !filters.status ? true : (el.status === filters.status) ? true : false)
                         .map(el =>
                             <Character 
                                 img={el.img}

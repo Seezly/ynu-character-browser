@@ -163,22 +163,26 @@ export class App extends React.Component {
         return (
             <>
                 <main>
-                    <ModalFilter
+                    {
+                        this.state.modalVisible &&
+                        <ModalFilter
                         data={this.state.data}
-                        visible={this.state.modalVisible}
                         onClick={this.handleClick}
                         onChange={this.handleChange} />
+                    }
                     <div id="wrapper">
                         <Header />
                         <SearchTool 
                             onClick={this.handleClick}
                             onChange={this.handleChange} />
                     </div>
-                    <DisplayCharacters
+                    {
+                        this.state.displayVisible &&
+                        <DisplayCharacters
                         data={this.state.data}
-                        visible={this.state.displayVisible}
                         name={this.state.value}
                         filters={this.state.filters} />
+                    }
                 </main>
                 <Footer />
             </>

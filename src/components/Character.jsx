@@ -3,15 +3,15 @@ import './character.css';
 
 class Character extends React.Component {
     render() {
+
         return (
             <div
                 className="character">
                 <div 
                     className="character__img" 
-                    data-url={this.props.img} 
                     style={
                         {
-                            background: `url(${'.' + this.props.img}) center no-repeat`,
+                            background: `url(${this.props.img}) center no-repeat`,
                             backgroundSize: 'cover'
                         }
                     } />

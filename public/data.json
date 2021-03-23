@@ -1,0 +1,229 @@
+{
+    "characters": [
+        {
+            "id": 1,
+            "name": "Yamori Kou",
+            "age": 14,
+            "race": "Human",
+            "img": "./images/kou.webp",
+            "status": "Alive",
+            "gender": "Male"
+        },
+        {
+            "id": 2,
+            "name": "Nanakusa Nazuna",
+            "age": "???",
+            "race": "Vampire",
+            "img": "./images/nazuna.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 3,
+            "name": "Asai Akira",
+            "age": 14,
+            "race": "Human",
+            "img": "./images/akira.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 4,
+            "name": "Seki Mahiru",
+            "age": 14,
+            "race": "Human",
+            "img": "./images/mahiru.webp",
+            "status": "Alive",
+            "gender": "Male"
+        },
+        {
+            "id": 5,
+            "name": "Anko Uguisu",
+            "age": "+30",
+            "race": "Human",
+            "img": "./images/uguisu.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 6,
+            "name": "Akihito Akiyama",
+            "age": "+20",
+            "race": "Vampire",
+            "img": "./images/akkun.webp",
+            "status": "Alive",
+            "gender": "Male"
+        },
+        {
+            "id": 7,
+            "name": "Hirata Nico",
+            "age": "???",
+            "race": "Vampire",
+            "img": "./images/nico.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 8,
+            "name": "Honda Kabura",
+            "age": "???",
+            "race": "Vampire",
+            "img": "./images/kabura.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 9,
+            "name": "Kikiyou Seri",
+            "age": "???",
+            "race": "Vampire",
+            "img": "./images/seri.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 10,
+            "name": "Rohakabe Midori",
+            "age": "???",
+            "race": "Vampire",
+            "img": "./images/midori.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 11,
+            "name": "Suzushiro Hatsuka",
+            "age": "???",
+            "race": "Vampire",
+            "img": "./images/hatsuka.webp",
+            "status": "Alive",
+            "gender": "Male"
+        },
+        {
+            "id": 12,
+            "name": "Shirakawa Kiyomisu",
+            "age": "+30",
+            "race": "Human",
+            "img": "./images/kiyomisu.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 13,
+            "name": "Hoshimi Kiku",
+            "age": "???",
+            "race": "Vampire",
+            "img": "./images/kiku.webp",
+            "status": "Alive",
+            "gender": "Female"
+        }
+    ],
+    "humans": [
+        {
+            "id": 1,
+            "name": "Yamori Kou",
+            "age": 14,
+            "img": "./images/kou.webp",
+            "status": "Alive",
+            "gender": "Male"
+        },
+        {
+            "id": 2,
+            "name": "Asai Akira",
+            "age": 14,
+            "img": "./images/akira.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 3,
+            "name": "Seki Mahiru",
+            "age": 14,
+            "img": "./images/mahiru.webp",
+            "status": "Alive",
+            "gender": "Male"
+        },
+        {
+            "id": 4,
+            "name": "Anko Uguisu",
+            "age": "+30",
+            "img": "./images/uguisu.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 5,
+            "name": "Shirakawa Kiyomisu",
+            "age": "+30",
+            "img": "./images/kiyomisu.webp",
+            "status": "Alive",
+            "gender": "Female"
+        }
+    ],
+    "vampires": [
+        {
+            "id": 1,
+            "name": "Nanakusa Nazuna",
+            "age": "???",
+            "img": "./images/nazuna.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 2,
+            "name": "Akihito Akiyama",
+            "age": "+20",
+            "img": "./images/akkun.webp",
+            "status": "Alive",
+            "gender": "Male"
+        },
+        {
+            "id": 3,
+            "name": "Hirata Nico",
+            "age": "???",
+            "img": "./images/nico.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 4,
+            "name": "Honda Kabura",
+            "age": "???",
+            "img": "./images/kabura.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 5,
+            "name": "Kikiyou Seri",
+            "age": "???",
+            "img": "./images/seri.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 6,
+            "name": "Rohakabe Midori",
+            "age": "???",
+            "img": "./images/midori.webp",
+            "status": "Alive",
+            "gender": "Female"
+        },
+        {
+            "id": 7,
+            "name": "Suzushiro Hatsuka",
+            "age": "???",
+            "img": "./images/hatsuka.webp",
+            "status": "Alive",
+            "gender": "Male"
+        },
+        {
+            "id": 8,
+            "name": "Hoshimi Kiku",
+            "age": "???",
+            "img": "./images/kiku.webp",
+            "status": "Alive",
+            "gender": "Female"
+        }
+    ]
+}

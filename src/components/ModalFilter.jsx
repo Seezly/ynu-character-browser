@@ -18,21 +18,21 @@ class ModalFilter extends React.Component {
             },
             {
                 title: 'Status',
+                filter: mapped(5).filter((el, i) => mapped(5).indexOf(el) === i)
+            },
+            {
+                title: 'Gender',
                 filter: mapped(6).filter((el, i) => mapped(6).indexOf(el) === i)
             },
             {
                 title: 'Race',
-                filter: mapped(7).filter((el, i) => mapped(7).indexOf(el) === i)
-            },
-            {
-                title: 'Gender',
                 filter: mapped(3).filter((el, i) => mapped(3).indexOf(el) === i)
-            },
+            }
         ];
 
         return (
             <div
-                className={this.props.visible ? 'modal-filter' : 'modal-filter none'}>
+                className='modal-filter'>
                 <button className="exit" onClick={this.props.onClick}>X</button>
                 <h3>Filters</h3>
                 <div 
