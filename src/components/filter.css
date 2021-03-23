@@ -1,0 +1,12 @@
+.filter {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+}
+
+h5 {
+    margin-bottom: 0.5em;
+}

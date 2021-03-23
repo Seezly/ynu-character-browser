@@ -1,5 +1,6 @@
 import React from 'react';
 import Filter from './Filter';
+import './modal.css';
 
 class ModalFilter extends React.Component {
     render() {

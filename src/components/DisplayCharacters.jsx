@@ -1,5 +1,6 @@
 import React from 'react';
 import Character from './Character';
+import './display.css';
 
 class DisplayCharacters extends React.Component {
     render() {

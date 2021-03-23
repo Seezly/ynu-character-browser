@@ -1,0 +1,17 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    font-weight: 900;
+    color: white;
+    text-decoration: underline dotted;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: line-through dotted;
+}

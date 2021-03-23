@@ -1,4 +1,5 @@
 import React from 'react';
+import './search.css';
 
 class SearchTool extends React.Component {
     render() {
