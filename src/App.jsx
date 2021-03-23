@@ -40,6 +40,124 @@ export class App extends React.Component {
         }));
     }
     
+    handleChange = (e) => {
+
+        if (e.target.classList.contains('search')){
+
+            if (!e.target.value) {
+                this.setState(state => ({
+                    data: state.data,
+                    displayVisible: false,
+                    modalVisible: state.modalVisible,
+                    value: e.target.value,
+                    filters: state.filters
+                }));
+                document.getElementById('not').classList.remove('visible');
+                document.getElementById('wrapper').classList.remove('top');
+            } else {
+                this.setState(state => ({
+                    data: state.data,
+                    displayVisible: state.displayVisible,
+                    modalVisible: state.modalVisible,
+                    value: e.target.value,
+                    filters: state.filters
+                }));
+            }
+        } else if (e.target.id) {
+            this.setState(state => ({
+                data: state.data,
+                displayVisible: state.displayVisible,
+                modalVisible: state.modalVisible,
+                value: state.value,
+                filters: Object.assign({}, state.filters, {[e.target.name]: e.target.value})
+            }));
+        }
+    };
+
+    handleClick = (e) => {
+        if (e.target.classList.contains('filter-btn')) {
+
+            this.setState(state => ({
+                data: state.data,
+                displayVisible: state.displayVisible,
+                modalVisible: !state.modalVisible,
+                value: state.value,
+                filters: state.filters
+            }));
+
+        } else if (e.target.classList.contains('search-btn')) {
+
+            if (this.state.value) {
+
+                if(this.state.displayVisible === false){
+
+                    this.setState(state => ({
+                        data: state.data,
+                        displayVisible: !state.displayVisible,
+                        modalVisible: state.modalVisible,
+                        value: state.value,
+                        filters: state.filters
+                    }));
+    
+                    document.getElementById('not').classList.add('visible');
+                    document.getElementById('wrapper').classList.add('top');
+                }
+
+            } else {
+                this.setState(state => ({
+                    data: state.data,
+                    displayVisible: state.displayVisible,
+                    modalVisible: state.modalVisible,
+                    value: '',
+                    filters: state.filters
+                }));
+                document.getElementById('not').classList.remove('visible');
+                document.getElementById('wrapper').classList.remove('top');
+            }      
+        } else if (e.target.classList.contains('exit')) {
+            this.setState(state => ({
+                data: state.data,
+                displayVisible: state.displayVisible,
+                modalVisible: !state.modalVisible,
+                value: state.value,
+                filters: state.filters
+            }));
+        } else if (e.target.classList.contains('save')) {
+            this.setState(state => ({
+                data: state.data,
+                displayVisible: state.displayVisible,
+                modalVisible: !state.modalVisible,
+                value: state.value,
+                filters: state.filters
+            }));
+        } else if (e.target.classList.contains('reset')) {
+            this.setState(state => ({
+                data: state.data,
+                displayVisible: state.displayVisible,
+                modalVisible: !state.modalVisible,
+                value: state.value,
+                filters: {
+                    age: null,
+                    gender: null,
+                    status: 'Alive',
+                    race: null
+                }
+            }));
+        } else {
+            this.setState(state => ({
+                data: state.data,
+                displayVisible: state.displayVisible,
+                modalVisible: state.modalVisible,
+                value: state.value,
+                filters: {
+                    age: null,
+                    gender: null,
+                    status: 'Alive',
+                    race: null
+                }
+            }));
+        }
+    };
 
     render() {
         return (
